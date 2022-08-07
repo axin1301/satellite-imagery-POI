@@ -1,0 +1,7 @@
+name: simclr
+channels:
+  - pytorch
+dependencies:
+  - pytorch
+  - torchvision
+  - pyyaml

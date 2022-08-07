@@ -1,0 +1,23 @@
+nodes: 1
+gpus: 1
+nr: 0 
+dataparallel: 0 
+workers: 8
+dataset_dir: "./datasets"
+
+# train options
+seed: 42 
+batch_size: 128
+image_size: 224
+start_epoch: 0
+epochs: 160
+pretrain: False 
+
+# model options
+resnet: "resnet18"
+projection_dim: 64 # "project the representation to a 64-dimensional latent space"
+
+# loss options
+optimizer: "Adam"
+temperature: 0.5 
+
