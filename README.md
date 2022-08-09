@@ -21,4 +21,4 @@ In our work, we use the Resnet-18 as the backbone.
 
 python feature_extract_simcrl.py   # Extract the image embeddings with the trained model.
 
-python eval.py   # evaluation: attential fusion model.   Input the image embeddings and corresponding socioeconomic indicators
+python eval.py   # evaluation: attential fusion model.   Need the image embeddings and corresponding socioeconomic indicators.
