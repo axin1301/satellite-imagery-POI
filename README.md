@@ -14,13 +14,11 @@ Input the satellite image name list and corresponding POI array.
 
 python main.py
 
-Need to modify the hyperparameters in ./config/config.yaml and in dataloader.py.
+Need to modify the hyperparameters in ./config/config.yaml and in dataloader.py.  
 In our work, we use the Resnet-18 as the backbone.
 
 # 3. Evaluation:
 
-python feature_extract_simcrl.py # Extract the image embeddings with the trained model.
+python feature_extract_simcrl.py   # Extract the image embeddings with the trained model.
 
-python eval.py (evaluation: attential fusion model).
-
-Input the image embeddings and corresponding socioeconomic indicators
+python eval.py   # evaluation: attential fusion model.   Input the image embeddings and corresponding socioeconomic indicators
