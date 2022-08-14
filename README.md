@@ -21,3 +21,8 @@ In our work, we use the Resnet-18 as the backbone.
 python feature_extract_simcrl.py   # Extract the image embeddings with the trained model.
 
 python eval.py   # evaluation: attential fusion model.   Need the image embeddings and corresponding socioeconomic indicators.
+
+# Descriptions for data:
+1. image_name.csv and POI_array_cate_1st_for_images.txt are satellite image name list and corresponding POI array (For model training).
+
+2. dianping_aggre_Sat.csv, pd_aggre_Sat.csv, and population_aggre_Sat.csv are respectively indicator data for number of comment, population density, and population count (Beijing), which are processed to map the corresponding satellite images. The reference of the original number of comment data is mentioned in the paper. And the original population data is from Worldpop project.
