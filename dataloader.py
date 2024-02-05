@@ -9,7 +9,7 @@ import torchvision.transforms.functional as F
 from torch.utils.data import Dataset
 from PIL import Image
 
-class MyDataset(Dataset):
+class MyDataset_lr(Dataset):
     def __init__(self, metadata,metadata2,root_dir, transform = None):
         self.metadata = pd.read_csv(metadata) #anchor_image file (list of satellite images)
         self.metadata2 = np.loadtxt(metadata2).reshape(1,-1) #corresponding number(ID) of the POI/geo-most adjacent satellite image in the anchor_image file
